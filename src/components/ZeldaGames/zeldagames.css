@@ -1,0 +1,86 @@
+.zelda-games-section {
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.zelda-games-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  gap: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
+  justify-content: space-evenly;
+}
+
+.zelda-games-list li {
+  max-width: 300px;
+  max-height: 400px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.zelda-games-list li:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.zelda-games-list li img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.zelda-games-list li p {
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.zelda-games-list-item {
+  position: relative;
+}
+
+.informacoes-games {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  padding: 20px;
+}
+
+.zelda-games-list-item:hover .informacoes-games {
+  opacity: 0.5;
+  background-color: #d9d3d6;
+}
+
+.developers {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.publishers {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+}

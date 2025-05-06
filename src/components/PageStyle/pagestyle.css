@@ -1,0 +1,153 @@
+.page-header{
+    background: url(../../images/zelda-rkp03okh2d43ik06.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+}
+
+.page-header-menu{
+    display: flex;
+    gap: 25px;
+    font-size: 17px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.page-header-menu li{
+    display: flex;
+    align-items: center;
+}
+
+.page-header-menu li a{
+    color: #fff;
+    transition: all 0.3s ease;
+    padding: 10px;
+    padding-top: 27px;
+    padding-bottom: 20px;
+}
+
+.page-header-menu li a:hover{
+    color: #ccc;
+    transform: scale(1.1);
+    border-bottom: 1px solid #fffdfd;
+}
+
+.page-main{
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-main .page-main-background{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.sombra-interna{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.page-main-content{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-main-content h3{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.page-main-content p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+}
+
+.page-main-button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    width: 150px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.page-main-button:hover{
+    background-color: #ccc;
+}
+
+.page-main-button:active{
+    background-color: #000;
+    color: #fff;
+}
+
+.page-games-section{
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.5), rgba(100, 154, 139, 0.5));
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.page-games-section h2{
+    color: #fff;
+    font-size: 45px;
+}
+
+.page-games-section-games{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.page-footer{
+    background-color: #ffffff;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.page-footer p{
+    color: #000000;
+    font-size: 19px;
+    padding-right: 15px;
+    padding-bottom: 4px;
+    transition: all 0.3s ease;
+}
+
+.page-footer p:hover{
+    transform: scale(1.1);
+}
