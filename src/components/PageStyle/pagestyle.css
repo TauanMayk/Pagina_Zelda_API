@@ -151,3 +151,94 @@
 .page-footer p:hover{
     transform: scale(1.1);
 }
+
+/* Media Queries para Responsividade */
+@media screen and (max-width: 768px) {
+    .page-header {
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .page-header-menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .page-header-menu li a {
+        padding: 5px;
+    }
+
+    .page-main-content h3 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .page-main-content p {
+        font-size: 16px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .page-games-section h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .page-games-section-games {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .page-main-content h3 {
+        font-size: 24px;
+    }
+
+    .page-main-content p {
+        font-size: 14px;
+    }
+
+    .page-main-button {
+        width: 120px;
+        padding: 8px 16px;
+    }
+
+    .page-games-section h2 {
+        font-size: 24px;
+    }
+
+    .page-footer {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .page-footer p {
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media screen and (max-width: 320px) {
+    .page-main-content h3 {
+        font-size: 20px;
+    }
+
+    .page-main-content p {
+        font-size: 12px;
+    }
+
+    .page-main-button {
+        width: 100px;
+        padding: 6px 12px;
+    }
+}

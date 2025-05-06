@@ -84,3 +84,82 @@
   font-weight: 600;
   text-align: center;
 }
+
+/* Media Queries para Responsividade */
+@media screen and (max-width: 768px) {
+    .zelda-games-section {
+        padding: 10px;
+    }
+
+    .zelda-games-list {
+        gap: 20px;
+    }
+
+    .zelda-games-list li {
+        max-width: 250px;
+        max-height: 350px;
+    }
+
+    .zelda-games-list li p {
+        font-size: 15px;
+    }
+
+    .developers {
+        font-size: 12px;
+    }
+
+    .publishers {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .zelda-games-section {
+        padding: 5px;
+    }
+
+    .zelda-games-list {
+        gap: 15px;
+    }
+
+    .zelda-games-list li {
+        max-width: 200px;
+        max-height: 300px;
+    }
+
+    .zelda-games-list li p {
+        font-size: 13px;
+    }
+
+    .developers {
+        font-size: 11px;
+    }
+
+    .publishers {
+        font-size: 10px;
+    }
+
+    .informacoes-games {
+        padding: 10px;
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media screen and (max-width: 320px) {
+    .zelda-games-list li {
+        max-width: 150px;
+        max-height: 250px;
+    }
+
+    .zelda-games-list li p {
+        font-size: 12px;
+    }
+
+    .developers {
+        font-size: 10px;
+    }
+
+    .publishers {
+        font-size: 9px;
+    }
+}
