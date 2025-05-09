@@ -11,6 +11,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "motion": "^12.10.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
