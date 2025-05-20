@@ -1,4 +1,5 @@
 import ZeldaGames from "../ZeldaGames/ZeldaGames";
+import ThemeToggler from "../ThemeToggler/ThemeToggler"
 import "./pagestyle.css";
 
 const PageStyle = () => {
@@ -21,6 +22,7 @@ const PageStyle = () => {
           <li>
             <a href="#">Publishers</a>
           </li>
+        <ThemeToggler/>
         </ul>
       </header>
       <main className="page-main " id="page-main">
