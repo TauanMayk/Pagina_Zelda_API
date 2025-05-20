@@ -1,3 +1,54 @@
 {
-    "monstros": []
+    "monstros": [
+        {
+            "nome": "Abominom",
+            "descricao": "Abominoms  are enemies in the Philips CD-i game The Faces of Evil. ",
+            "aparicoes": []
+        },
+        {
+            "nome": "Arwing",
+            "descricao": "Arwings are unused enemies in Ocarina of Time. ",
+            "aparicoes": []
+        },
+        {
+            "nome": "Aruroda",
+            "descricao": "Arurodas are scorpion-like enemies in The Adventure of Link. ",
+            "aparicoes": []
+        },
+        {
+            "nome": "Baby Dodongo",
+            "descricao": "Baby Dodongos are enemies in Ocarina of Time. ",
+            "aparicoes": []
+        },
+        {
+            "nome": "Arrow Trap",
+            "descricao": "Arrow Traps are recurring traps in The Legend of Zelda series. ",
+            "aparicoes": []
+        },
+        {
+            "nome": "Babusu",
+            "descricao": "Babusu are shadow beings in A Link to the Past. They appear in the Ice Palace. ",
+            "aparicoes": []
+        },
+        {
+            "nome": "Baba Serpent",
+            "descricao": "Baba Serpents are enemies in Twilight Princess. ",
+            "aparicoes": []
+        },
+        {
+            "nome": "Armos Warrior",
+            "descricao": "The Armos Warrior is the Sub-Boss of Skull Dungeon in Oracle of Ages.. ",
+            "aparicoes": []
+        },
+        {
+            "nome": "Arrgi",
+            "descricao": "Arrgi are recurring Enemies in The Legend of Zelda series. Arrgi go unnamed in Ancient Stone Tablets. ",
+            "aparicoes": []
+        },
+        {
+            "nome": "Arpagos",
+            "descricao": "Arpagos are recurring flying dragon-like enemies in The Legend of Zelda series. ",
+            "aparicoes": []
+        }
+    ]
 }

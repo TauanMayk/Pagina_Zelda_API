@@ -4,7 +4,7 @@ import json
 # def fetch_data(endpoint, filters={}):
 #     url = f"https://zelda.fanapis.com/api/{endpoint}"
 #     response = requests.get(url, params=filters)
-    
+
 #     return response.json() if response.status_code == 200 else None
 
 # characters = fetch_data("games", {"limit": 10})
@@ -28,37 +28,40 @@ import json
 #     json.dump(dados, file, indent=4, ensure_ascii=False)
 
 
-def fetch_data2(endpoint, filters={}):
-    url = f"https://zelda.fanapis.com/api/{endpoint}"
+def fetch_data2(filters={}):
+    url = f"https://zelda.fanapis.com/api/monsters"
     response = requests.get(url, params=filters)
-    
+
     return response.json() if response.status_code == 200 else None
 
-Monters = fetch_data2("monster", {"limit": 10})
+
+Monters = fetch_data2({"limit": 10})
 
 monstros = []
 
-if Monters and "data" in Monters:
-    monstros = [
-    {
-        "nome": monster["name"],
-        "descricao": monster["description"],
-        "aparicoes": [
+if Monters and isinstance(Monters, dict) and "data" in Monters:
+    for monster in Monters["data"]:
+        aparicoes = []
+        for appearance in monster.get("appearances", []):
+            if isinstance(appearance, dict):
+                aparicoes.append(
+                    {
+                        "nome": appearance.get("name", "Desconhecido"),
+                        "data-de-lancamento": appearance.get(
+                            "release_date", "Desconhecida"
+                        ),
+                    }
+                )
+
+        monstros.append(
             {
-                "nome": appearance["name"],
-                "data-de-lancamento": appearance["release_date"]
+                "nome": monster.get("name", ""),
+                "descricao": monster.get("description", ""),
+                "aparicoes": aparicoes,
             }
-            for appearance in monster.get("appearances", [])
-        ]
-    } for monster in Monters["data"]
-]
+        )
 
-
-dados2 = {
-    "monstros": monstros
-}
-
-print(Monters)
+dados2 = {"monstros": monstros}
 
 with open("monsters.json", "w", encoding="utf-8") as file:
     json.dump(dados2, file, indent=4, ensure_ascii=False)
