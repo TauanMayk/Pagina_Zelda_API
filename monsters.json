@@ -3,52 +3,122 @@
         {
             "nome": "Abominom",
             "descricao": "Abominoms  are enemies in the Philips CD-i game The Faces of Evil. ",
-            "aparicoes": []
+            "aparicoes": [
+                {
+                    "nome": "Link: The Faces of Evil",
+                    "data-de-lancamento": " October 10, 1993"
+                }
+            ]
         },
         {
             "nome": "Arwing",
             "descricao": "Arwings are unused enemies in Ocarina of Time. ",
-            "aparicoes": []
+            "aparicoes": [
+                {
+                    "nome": "The Legend of Zelda: Ocarina of Time",
+                    "data-de-lancamento": " November 23, 1998"
+                }
+            ]
         },
         {
             "nome": "Aruroda",
             "descricao": "Arurodas are scorpion-like enemies in The Adventure of Link. ",
-            "aparicoes": []
+            "aparicoes": [
+                {
+                    "nome": "Zelda II: The Adventure of Link",
+                    "data-de-lancamento": " January 14, 1987"
+                }
+            ]
         },
         {
             "nome": "Baby Dodongo",
             "descricao": "Baby Dodongos are enemies in Ocarina of Time. ",
-            "aparicoes": []
+            "aparicoes": [
+                {
+                    "nome": "The Legend of Zelda: Ocarina of Time",
+                    "data-de-lancamento": " November 23, 1998"
+                }
+            ]
         },
         {
             "nome": "Arrow Trap",
             "descricao": "Arrow Traps are recurring traps in The Legend of Zelda series. ",
-            "aparicoes": []
+            "aparicoes": [
+                {
+                    "nome": "The Legend of Zelda: Phantom Hourglass",
+                    "data-de-lancamento": " October 1, 2007"
+                },
+                {
+                    "nome": "The Legend of Zelda: Spirit Tracks",
+                    "data-de-lancamento": " December 7, 2009"
+                },
+                {
+                    "nome": "The Legend of Zelda: A Link Between Worlds",
+                    "data-de-lancamento": " November 22, 2013"
+                },
+                {
+                    "nome": "The Legend of Zelda: Tri Force Heroes",
+                    "data-de-lancamento": " October 23, 2015"
+                }
+            ]
         },
         {
             "nome": "Babusu",
             "descricao": "Babusu are shadow beings in A Link to the Past. They appear in the Ice Palace. ",
-            "aparicoes": []
+            "aparicoes": [
+                {
+                    "nome": "The Legend of Zelda: A Link to the Past",
+                    "data-de-lancamento": " April 13, 1992"
+                }
+            ]
         },
         {
             "nome": "Baba Serpent",
             "descricao": "Baba Serpents are enemies in Twilight Princess. ",
-            "aparicoes": []
+            "aparicoes": [
+                {
+                    "nome": "The Legend of Zelda: Twilight Princess",
+                    "data-de-lancamento": " November 19, 2006"
+                }
+            ]
         },
         {
             "nome": "Armos Warrior",
             "descricao": "The Armos Warrior is the Sub-Boss of Skull Dungeon in Oracle of Ages.. ",
-            "aparicoes": []
+            "aparicoes": [
+                {
+                    "nome": "The Legend of Zelda: Oracle of Ages",
+                    "data-de-lancamento": " May 14, 2001"
+                }
+            ]
         },
         {
             "nome": "Arrgi",
             "descricao": "Arrgi are recurring Enemies in The Legend of Zelda series. Arrgi go unnamed in Ancient Stone Tablets. ",
-            "aparicoes": []
+            "aparicoes": [
+                {
+                    "nome": "The Legend of Zelda: A Link to the Past",
+                    "data-de-lancamento": " April 13, 1992"
+                },
+                {
+                    "nome": "The Legend of Zelda: A Link Between Worlds",
+                    "data-de-lancamento": " November 22, 2013"
+                }
+            ]
         },
         {
             "nome": "Arpagos",
             "descricao": "Arpagos are recurring flying dragon-like enemies in The Legend of Zelda series. ",
-            "aparicoes": []
+            "aparicoes": [
+                {
+                    "nome": "Link: The Faces of Evil",
+                    "data-de-lancamento": " October 10, 1993"
+                },
+                {
+                    "nome": "Zelda: The Wand of Gamelon",
+                    "data-de-lancamento": " October 10, 1993"
+                }
+            ]
         }
     ]
 }

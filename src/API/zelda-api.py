@@ -35,6 +35,13 @@ def fetch_data2(filters={}):
     return response.json() if response.status_code == 200 else None
 
 
+def fetch_detail_from_url(url):
+    response = requests.get(url)
+    if response.status_code == 200:
+        return response.json()
+    return None
+
+
 Monters = fetch_data2({"limit": 10})
 
 monstros = []
@@ -42,16 +49,18 @@ monstros = []
 if Monters and isinstance(Monters, dict) and "data" in Monters:
     for monster in Monters["data"]:
         aparicoes = []
-        for appearance in monster.get("appearances", []):
-            if isinstance(appearance, dict):
-                aparicoes.append(
-                    {
-                        "nome": appearance.get("name", "Desconhecido"),
-                        "data-de-lancamento": appearance.get(
-                            "release_date", "Desconhecida"
-                        ),
-                    }
-                )
+        for appearance_url in monster.get("appearances", []):
+            if isinstance(appearance_url, str) and appearance_url.startswith("http"):
+                data = fetch_detail_from_url(appearance_url)
+                if data and "data" in data:
+                    aparicoes.append(
+                        {
+                            "nome": data["data"].get("name", "Desconhecido"),
+                            "data-de-lancamento": data["data"].get(
+                                "released_date", "Desconhecida"
+                            ),
+                        }
+                    )
 
         monstros.append(
             {

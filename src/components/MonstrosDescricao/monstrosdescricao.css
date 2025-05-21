@@ -1,0 +1,71 @@
+.descricao-monstros{
+    max-width: 1500px;
+    height: 100%;    
+}
+
+.descricao{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.nome-monstros{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.descricao-monstro{
+    font-size: 13px;
+    color: darkgoldenrod;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nome-aparicao{
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.release-date-aparicao{
+    color: cornflowerblue;
+
+}
+
+.botao-fechar-container{
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: rgba(35,35,35,.65);
+}
+
+.botao-fechar{
+    background-color: transparent;
+    color: gray;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    height: 44px;
+    width: 46px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.botao-fechar:hover{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
