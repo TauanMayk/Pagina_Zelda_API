@@ -42,12 +42,8 @@ const PageStyle = () => {
         </motion.nav>
       </header>
       <motion.main
-        className="page-main"
+        className="page-main loader"
         id="page-main"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: 50 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <div className="sombra-interna">
           <img
@@ -78,11 +74,19 @@ const PageStyle = () => {
           <ZeldaGames />
         </div>
       </motion.section>
-      <footer className="page-footer">
+      <motion.footer className="page-footer"
+      animate={{
+        background: [
+          "linear-gradient(135deg,rgb(235, 237, 237),rgb(53, 73, 64))",
+          "linear-gradient(135deg,rgb(191, 208, 215),rgb(105, 195, 195))",
+          "linear-gradient(135deg,rgb(63, 166, 144),rgb(66, 203, 137))"
+        ]
+      }}
+      transition={{ duration: 20, repeat: Infinity, ease: "linear" }}>
         <div className="page-footer-content">
           <p>Copyright © 2025 Zelda Games</p>
         </div>
-      </footer>
+      </motion.footer>
     </>
   );
 };
