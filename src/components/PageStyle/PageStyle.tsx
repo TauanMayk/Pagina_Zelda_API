@@ -1,4 +1,5 @@
 import ZeldaGames from "../ZeldaGames/ZeldaGames";
+import { MapaGames } from "../MapaGames/MapaGames";
 import ThemeToggler from "../ThemeToggler/ThemeToggler";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
@@ -47,7 +48,7 @@ const PageStyle = () => {
       >
         <div className="sombra-interna">
           <img
-            srcSet="./src/images/the-legend-of-zelda-landscape-sword-5qvpc6rnsmwsdqbd.jpg"
+            srcSet="./src/images/904361-3840x2160-desktop-4k-legend-of-zelda-breath-of-the-wild-background-image.jpg"
             alt="background"
             className="page-main-background"
           />
@@ -73,7 +74,8 @@ const PageStyle = () => {
         <div className="page-games-section-games">
           <ZeldaGames />
         </div>
-      </motion.section>
+      </motion.section> 
+      <MapaGames/>
       <motion.footer className="page-footer"
       animate={{
         background: [

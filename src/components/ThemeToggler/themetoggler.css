@@ -1,7 +1,3 @@
-/* .dark-mode{
-    
-} */
-
 .botao-sol{
     display: flex;
     align-items: center;
@@ -35,3 +31,9 @@
     height: 80px;
     transition: 0.4s all ease-in-out;
 }
+
+.page-main .page-main-background .dark-mode{
+    display: block;
+    z-index: 2;
+}
+
